@@ -1,0 +1,22 @@
+<div class="display-container">
+    <div class="btn-container">
+        <a class="burger-btn" href="" >
+            <img src="/menu-burger.png">
+        </a>
+    </div>
+    <div class="display-content">   
+        @if (evaluatedEqn) {
+            <div class="past-display">
+                {{pastEqn}}
+            </div>
+            <div class="current-display">
+                {{calculatedValue}}
+            </div>
+        }
+        @else {
+            <div class="current-display">
+                {{displayEqn}}
+            </div>
+        }
+    </div>
+</div>

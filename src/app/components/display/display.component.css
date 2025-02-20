@@ -1,0 +1,41 @@
+.display-container {
+    width: 100%;
+    padding: 10px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container {
+    align-self: flex-start;
+    padding-top: 8px;
+}
+
+.burger-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.burger-btn:hover {
+    cursor: pointer;
+}
+
+.display-content {
+    flex-grow: 1; /* This will push the display content to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.past-display {
+    color: #8e8d93;
+    text-align: end;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.current-display {
+    text-align: end;
+    width: 100%;
+    font-size: 4em;
+}

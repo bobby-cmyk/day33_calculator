@@ -1,0 +1,90 @@
+/* 
+orange: #ff9f0a  
+dark-grey: #2a2a2c
+light-grey: #5c5b60
+white: #ffffff
+black: #000000
+*/
+
+.input-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 12px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.btn {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 50%;
+    border: none;
+    min-width: 0; /* Prevents forced expansion */
+    min-height: 0; /* Ensures no unwanted stretching */
+    font-size: 2em;
+    transition: background-color 0.2s ease
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* Button that spans 2 columns */
+.span-2 {
+    grid-column: span 2;
+    border-radius: 9999px; /* pill shape for the longer button */
+    aspect-ratio: 2/1;
+}
+
+/* Button colors */
+.light-grey {
+    background-color: #5c5b60;
+    color: #ffffff;
+}
+
+.dark-grey {
+    background-color: #2a2a2c;
+    color: #ffffff;
+}
+
+.orange {
+    background-color:  #ff9f0a ;
+    color: #ffffff;
+}
+
+.light-grey:hover {
+    background-color: #7f7e84; 
+    color: #ffffff;
+}
+
+.dark-grey:hover {
+    background-color: #444444; 
+    color: #ffffff;
+}
+
+.orange:hover {
+    background-color: #ffb84c; 
+    color: #ffffff;
+}
+
+.light-grey:active {
+    background-color: #7f7e84;
+    color: #ffffff;
+}
+
+.dark-grey:active {
+    background-color: #444444; 
+    color: #ffffff;
+}
+
+.orange:active {
+    background-color: #ffb84c;
+    color: #ffffff;
+}

@@ -1,0 +1,32 @@
+<!-- HTML -->
+<div class="calculator-grid">
+    <!-- Row 1 -->
+    <button type="button" class="btn light-grey">AC</button>
+    <button type="button" class="btn light-grey">±</button>
+    <button type="button" class="btn light-grey">%</button>
+    <button type="button" class="btn orange" (click)="insertInput('ops', '/')">÷</button>
+    
+    <!-- Row 2 -->
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '7')">7</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '8')">8</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '9')">9</button>
+    <button type="button" class="btn orange" (click)="insertInput('ops', '*')">×</button>
+    
+    <!-- Row 3 -->
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '4')">4</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '5')">5</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '6')">6</button>
+    <button type="button" class="btn orange" (click)="insertInput('ops', '-')">−</button>
+    
+    <!-- Row 4 -->
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '1')">1</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '2')">2</button>
+    <button type="button" class="btn dark-grey" (click)="insertInput('number', '3')">3</button>
+    <button type="button" class="btn orange" (click)="insertInput('ops', '+')">+</button>
+    
+    <!-- Row 5 -->
+    <button type="button" class="btn dark-grey span-2" (click)="insertInput('number', '0')">0</button>
+    <button type="button" class="btn dark-grey">.</button>
+    <button type="button" class="btn orange" (click)="evaluateEqn()">=</button>
+  </div>
+  

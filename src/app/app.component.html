@@ -1,0 +1,11 @@
+<div class="full-screen">
+  <app-display 
+    [displayEqn] = "displayEqn"
+    [pastEqn] = "pastEqn"
+    [calculatedValue] = "calculatedValue">
+  </app-display>
+  <app-input 
+    (whenInput)="pushToCurrentEqn($event)"
+    (evaluateEqnEvent)="evaluateEqn($event)">
+  </app-input>   
+</div>

@@ -1,0 +1,20 @@
+/* 
+orange: #ff9f0a  
+dark-grey: #2a2a2c
+light-grey: #5c5b60
+white: #ffffff
+black: #000000
+*/
+
+.full-screen {
+    color: #ffffff;
+    background-color: #000000;
+    max-width: 420px;
+    min-width: 320px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
