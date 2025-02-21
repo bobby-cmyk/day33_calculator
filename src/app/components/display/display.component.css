@@ -21,7 +21,7 @@
 }
 
 .display-content {
-    flex-grow: 1; /* This will push the display content to the bottom */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -32,10 +32,15 @@
     text-align: end;
     width: 100%;
     font-size: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .current-display {
     text-align: end;
     width: 100%;
     font-size: 4em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

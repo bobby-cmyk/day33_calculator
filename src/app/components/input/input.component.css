@@ -36,6 +36,10 @@ black: #000000
     cursor: pointer;
 }
 
+.git-btn {
+    font-size: 1.2em;
+}
+
 /* Button that spans 2 columns */
 .span-2 {
     grid-column: span 2;

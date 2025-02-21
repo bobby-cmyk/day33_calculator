@@ -6,6 +6,7 @@
   </app-display>
   <app-input 
     (whenInput)="pushToCurrentEqn($event)"
-    (evaluateEqnEvent)="evaluateEqn($event)">
+    (whenEvaluateEqn)="evaluateEqn($event)"
+    (whenClear)="allClear($event)">
   </app-input>   
 </div>

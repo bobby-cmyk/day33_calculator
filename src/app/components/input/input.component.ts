@@ -14,7 +14,10 @@ export class InputComponent {
   whenInput = new Subject<CalInput>
 
   @Output()
-  evaluateEqnEvent = new Subject<string>
+  whenEvaluateEqn = new Subject<string>
+
+  @Output()
+  whenClear = new Subject<string>
 
   protected insertInput(type:string, value:string) {
     let input:CalInput = {
@@ -28,6 +31,10 @@ export class InputComponent {
   }
 
   protected evaluateEqn() {
-    this.evaluateEqnEvent.next('')
+    this.whenEvaluateEqn.next('')
+  }
+
+  protected clear() {
+    this.whenClear.next('')
   }
 }

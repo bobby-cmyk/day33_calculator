@@ -1,6 +1,6 @@
 <div class="display-container">
     <div class="btn-container">
-        <a class="burger-btn" href="" >
+        <a class="burger-btn" href="https://en.wikipedia.org/wiki/Calculator_(Apple)" target="_blank">
             <img src="/menu-burger.png">
         </a>
     </div>
@@ -9,8 +9,8 @@
             <div class="past-display">
                 {{pastEqn}}
             </div>
-            <div class="current-display">
-                {{calculatedValue}}
+            <div class="current-display cal-value">
+                {{calculatedValue | number:'1.0':'en-US'}}
             </div>
         }
         @else {
@@ -19,4 +19,5 @@
             </div>
         }
     </div>
+
 </div>
