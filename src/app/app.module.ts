@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { DisplayComponent } from './components/display/display.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

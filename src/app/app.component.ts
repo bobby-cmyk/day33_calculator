@@ -22,6 +22,8 @@ export class AppComponent {
 
   subtotal:number = 0
 
+  showErrorDialog: boolean = false;
+
   protected allClear($event:string) {
     this.pastEqn = '0'
     this.displayEqn = '0'
@@ -43,7 +45,7 @@ export class AppComponent {
       this.displayEqn = "0"
     }
     catch (e) {
-      console.error('Error parsing eqn')
+      alert('Equation cannot be evaluted!');
     }
   }
 
@@ -90,15 +92,13 @@ export class AppComponent {
         }
       }
     }
-
     else {
       if ($event.type=='ops') {
         this.currentEqn[0] = {type:'number', value: this.subtotal.toString()};
         this.currentEqn = [...this.currentEqn, $event];
         this.justEvaluated = false;
       }
-
-      else if ($event.type=='number'){
+      else {
         this.pastEqn = '0'
         this.displayEqn = '0'
         this.subtotal = 0
@@ -107,9 +107,9 @@ export class AppComponent {
         this.currentEqn[0] = $event;
       }
     }
-    
-    console.log('>>> currentEquation', this.currentEqn)
 
+    console.log('>>> currentEquation', this.currentEqn)
+    
     this.displayEqn = this.currentEqn.reduce((acc, item) => acc + item.value, '');
   }
 

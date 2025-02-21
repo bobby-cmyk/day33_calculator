@@ -37,7 +37,12 @@ black: #000000
 }
 
 .git-btn {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.ac-btn {
+    font-size: 1.6em;
 }
 
 /* Button that spans 2 columns */
